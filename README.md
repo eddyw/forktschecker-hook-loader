@@ -34,7 +34,6 @@ const HappyPack = require('happypack')
 const webpack = require('webpack')
 
 module.exports = {
-  stats,
   entry: './entry.tsx',
   output: {
     filename: 'entry.bundle.js',
@@ -88,7 +87,7 @@ module.exports = {
   "compilerOptions": {
     "target": "es5",
     "lib": ["es6"],
-    "moduleResolution": "node",
+    "moduleResolution": "node"
   },
   "exclude": [
     "node_modules"
