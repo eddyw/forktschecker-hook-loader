@@ -1,0 +1,38 @@
+{
+  "name": "forktschecker-hook-loader",
+  "version": "1.0.0",
+  "description": "No emit assets if tsForkChecker has errors",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "npm run tslint && tsc --version && tsc --project \"./src/tsconfig.json\"",
+    "tslint": "node_modules/.bin/tslint --project src/tsconfig.json --format stylish --config src/tslint.json --fix --force",
+    "webpack:example": "webpack --config example/webpack.config.js --watch"
+  },
+  "keywords": [
+    "tsForkChecker",
+    "ts",
+    "webpack"
+  ],
+  "author": "Eddy Wilson (https://github.com/eddyw) ",
+  "license": "MIT",
+  "dependencies": {
+    "loader-utils": "1.1.0",
+    "schema-utils": "0.4.2"
+  },
+  "peerDependencies": {
+    "webpack": "^2.3.0 || ^3.0.0"
+  },
+  "devDependencies": {
+    "@types/loader-utils": "1.1.0",
+    "@types/node": "8.0.53",
+    "@types/webpack": "3.8.1",
+    "cache-loader": "1.2.0",
+    "fork-ts-checker-webpack-plugin": "0.2.9",
+    "happypack": "4.0.0",
+    "rimraf": "2.6.2",
+    "ts-loader": "3.1.1",
+    "tslint": "5.8.0",
+    "typescript": "2.6.1",
+    "webpack": "3.8.1"
+  }
+}
