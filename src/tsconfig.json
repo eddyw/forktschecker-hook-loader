@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "target": "es5",
+    "lib": ["es5", "es2015.core"],
+    "alwaysStrict": true,
+    "noImplicitAny": false,
+    "baseUrl": ".",
+    "outDir": "../lib",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": false,
+    "allowUnreachableCode": true
+  },
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "node_modules",
+    "lib",
+    "example"
+  ]
+}
