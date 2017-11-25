@@ -1,6 +1,6 @@
 {
   "name": "forktschecker-hook-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "No emit assets if tsForkChecker has errors",
   "main": "lib/index.js",
   "scripts": {
