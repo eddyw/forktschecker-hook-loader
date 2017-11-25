@@ -8,7 +8,15 @@ Allows Webpack to handle errors from ForkTsChecker and HappyPack while these run
 
 Works together with [Fork Ts Checker Webpack Plugin](https://github.com/Realytics/fork-ts-checker-webpack-plugin), [HappyPack](https://github.com/amireh/happypack), and [ts-loader](https://github.com/TypeStrong/ts-loader). While ForkTSChecker works in a separate process, the loader listens for the hook `fork-ts-checker-receive` and `fork-ts-checker-done` right before the files are emitted, so it's possible to pass control to Webpack to handle errors and warnings.
 
+## Installation
+Install the following packages:
+```bash
+npm install --save-dev forktschecker-hook-loader
+npm install --save-dev fork-ts-checker-webpack-plugin happypack cache-loader
+```
+
 ## Examples
+
 You can check an example in the [example folder](https://github.com/eddyw/forktschecker-hook-loader/tree/master/example)
 
 Alternatively, you can:
